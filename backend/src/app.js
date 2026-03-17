@@ -7,7 +7,8 @@ const cors = require("cors");
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173',
+    'https://code-review-ansu.onrender.com'],
     methods:["POST"],
     credentials:true,
 }));

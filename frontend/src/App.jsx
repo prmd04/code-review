@@ -23,7 +23,7 @@ function App() {
       setReview("");
 
       const response = await axios.post(
-        "http://localhost:3000/ai/ai-review",
+        "https://code-review-ansu.onrender.com/ai/ai-review",
         { code },
         {withCredentials:true}
       );
