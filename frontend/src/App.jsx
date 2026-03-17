@@ -2,13 +2,12 @@ import { useState } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-javascript";
-import "./App.css";
+import "./app.css";
 import axios from "axios";
 import Markdown from "react-markdown";
 
 import EditorModule from "react-simple-code-editor";
 const Editor = EditorModule.default;
-
 function App() {
   const [code, setCode] = useState(`function sum(a, b) {
   return a + b;
