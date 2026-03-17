@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* MAIN LAYOUT */
+main {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #1e1e1e;
+}
+
+/* PANELS */
+.left, .right {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LEFT PANEL */
+.left {
+  background: #2b2b2b;
+  position: relative;
+}
+
+/* EDITOR AREA */
+.editor-container {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+/* Fix textarea inside editor */
+.editor-container textarea {
+  outline: none;
+  caret-color: #fff;
+}
+
+/* RIGHT PANEL */
+.right {
+  background: #2b2b2b;
+}
+
+/* OUTPUT PANEL */
+.output {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* REVIEW BUTTON (fixed, clean UX) */
+.review-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  background: #4f46e5;
+  color: white;
+  border: none;
+
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.review-btn:hover {
+  background: #6366f1;
+}
+.loader {
+  color: white;
+  font-size: 16px;
+  opacity: 0.8;
+  padding: 1rem;
+}
