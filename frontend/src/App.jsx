@@ -2,7 +2,7 @@ import { useState } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-javascript";
-import "./app.css";
+import "./App.css";
 import axios from "axios";
 import Markdown from "react-markdown";
 
